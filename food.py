@@ -33,7 +33,7 @@ def order_food(menu_id, food_id):
 
 menu = get_today_menu()
 poll_start = parser.parse(menu['poll_start']).astimezone(get_localzone())
-poll_start = poll_start.strftime('%Y-%M-%d %H:%M')
+poll_start = poll_start.strftime('%Y-%m-%d %H:%M')
 menu_id = menu['id']
 print('poll start: {}'.format(poll_start))
 
